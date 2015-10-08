@@ -368,6 +368,17 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'dist/',
+        message: 'updated',
+        dotfiles: true
+      },
+      src: [
+        '**/*'
+      ]
     }
   });
 
