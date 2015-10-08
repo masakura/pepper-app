@@ -1,0 +1,19 @@
+{
+  "name": "pepper-app",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "jasmine-core": "jasmine#~2.3.4"
+  }
+}
