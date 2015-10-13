@@ -1,3 +1,11 @@
-<!DOCTYPE html> <html> <head> <meta charset=utf-8> <title>pepper app</title> <meta name=description content=""> <meta name=viewport content="width=device-width,initial-scale=1"> <link rel="shortcut icon" href=/favicon.b25e58c4.ico> <link rel=apple-touch-icon href=/apple-touch-icon.9727d3c2.png> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel=stylesheet href=styles/main.e9d79eb4.css> <script src=http://198.18.0.1/libs/qimessaging/1.0/qimessaging.js></script> var session = new QiSession(); function sampleButtonClicked() { console.log(session); session.service("ALMemory").done(function (ALMemory) { console.log("ALMemory取得成功"); ALMemory.raiseEvent("PepperQiMessaging/fromtablet", "押したね"); }); }   <body> <!--[if lt IE 10]>
+<!DOCTYPE html> <html> <head> <meta charset=utf-8> <title>pepper app</title> <meta name=description content=""> <meta name=viewport content="width=device-width,initial-scale=1"> <link rel="shortcut icon" href=/favicon.b25e58c4.ico> <link rel=apple-touch-icon href=/apple-touch-icon.9727d3c2.png> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel=stylesheet href=styles/main.e9d79eb4.css> <script src=http://198.18.0.1/libs/qimessaging/1.0/qimessaging.js></script> <script>var session = new QiSession();
+
+      function sampleButtonClicked() {
+        console.log(session);
+        session.service("ALMemory").done(function (ALMemory) {
+          console.log("ALMemory取得成功");
+          ALMemory.raiseEvent("PepperQiMessaging/fromtablet", "押したね");
+        });
+      }</script>  <body> <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]--> <div class=container> <button type=button class="btn btn-large" onclick=sampleButtonClicked()>Push!</button> </div> <script src=scripts/vendor.baff0332.js></script> <script src=scripts/plugins.19a1d77b.js></script> <script src=scripts/main.b6c3df09.js></script>  
